@@ -9,6 +9,7 @@
 ## Experiments:
 
 [1. 8bit Arithmetic Operations](./A01)<br>
-[2. 16bit Arithmetic Operations](./A02)
+[2. 16bit Arithmetic Operations](./A02)<br>
+[3. String Manipulation](./A03)
 
 
