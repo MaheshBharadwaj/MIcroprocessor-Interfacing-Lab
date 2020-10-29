@@ -1,0 +1,14 @@
+;BCD to ASCII 
+MOV R0, #00
+MOV A, R1
+ANL A, #0F0h
+SWAP A
+ADD A, #30h
+MOV R3, A
+
+MOV A, R1
+ANL A, #0Fh
+ADD A, #30h
+MOV R4, A
+
+HALT: SJMP HALT
