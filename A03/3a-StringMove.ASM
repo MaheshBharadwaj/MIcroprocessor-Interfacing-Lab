@@ -20,6 +20,7 @@ start:	mov ax, data
 		mov cx, count
 		LEA SI, str1
 		LEA DI, str2
+		CLD
 		rep movsb
 		mov AH, 4ch
 		int 21h

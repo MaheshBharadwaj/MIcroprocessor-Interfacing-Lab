@@ -33,7 +33,7 @@ here:	MOV ah,00h
 	MOV al, [si]
 	SUB al, [di]
 	JNC skip
-	INC ah
+	INC ah;NEG AL
 skip:	MOV [bx], ax
 	INC si
 	INC di

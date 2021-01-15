@@ -11,14 +11,14 @@ code segment
 		org 0100h
 start:	MOV AX, data
 		MOV DS, AX
-		MOV SI, offset arr1
-		MOV DI, offset arr2
+		MOV SI, offset arr1 ;LEA SI, arr1
+		MOV DI, offset arr2 ;LEA DI, arr2
 		MOV CX, count
 here:	MOV BL, [SI]
-		MOV [DI], BL
+		MOV [DI], BL; MOV [DI], [SI]
 		INC SI
 		INC DI
-		LOOP here
+		LOOP here; DEC CX JMP HERE
 		MOV count, SI
 		MOV ah, 4ch
 		INT 21h

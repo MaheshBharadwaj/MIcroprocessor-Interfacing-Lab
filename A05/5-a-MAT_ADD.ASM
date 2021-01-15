@@ -38,7 +38,7 @@ skip:	MOV [bx], ax
 	INC si
 	INC di
 	INC bx
-	INC bx
+	INC bx; ADD BX, 02h
 	loop here
 stop:	MOV ah,4ch
 	int 21h
